@@ -1,0 +1,239 @@
+body {
+
+    margin: 0;
+
+}
+
+#screen {
+
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+
+}
+
+#baggrund {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(Produktion/SVG/forstescene.svg);
+    background-size: 100%;
+
+}
+
+#skab {
+
+    position: absolute;
+    width: 18vw;
+    height: 27vw;
+
+    top: 18vw;
+    left: 76vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/skab%20til%20scene.svg);
+    z-index: 2;
+    transform: scale(1.4)
+}
+
+#gulv {
+
+    position: absolute;
+    width: 121vw;
+    height: 192vw;
+
+    top: 90vw;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-image: url(Produktion/gulv1.svg);
+    transform: scale(1.4);
+    background-repeat: no-repeat;
+    z-index: 6;
+
+
+}
+
+#gulv2 {
+
+    position: absolute;
+    width: 115vw;
+    height: 192vw;
+
+    top: 84vw;
+    background-repeat: 90%;
+    background-size: 90%;
+    background-image: url(Produktion/gulv2.svg);
+    transform: scale(1.4);
+    background-repeat: no-repeat;
+    z-index: 4;
+
+
+}
+
+#gulv3 {
+
+    position: absolute;
+    width: 113vw;
+    height: 19vw;
+
+
+    background-size: 100%;
+    left: 50vw;
+    top: 60vw;
+    background-image: url(Produktion/gulv3.svg);
+    transform: scale(2);
+    background-repeat: no-repeat;
+    z-index: 5;
+
+}
+
+#tonder {
+
+    position: absolute;
+    width: 13vw;
+    height: 12vw;
+
+    top: 37vw;
+    left: 40vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/t%C3%B8nder%20til%20scene.svg);
+    z-index: 2;
+    transform: scale(1.4)
+}
+
+#hund {
+
+    position: absolute;
+    width: 6vw;
+    height: 9vw;
+
+    top: 48vw;
+    left: 46vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/hund%20scene.svg);
+    z-index: 5;
+    transform: scale(1.4)
+}
+
+#hund2 {
+
+    position: absolute;
+    width: 6vw;
+    height: 9vw;
+
+    top: 43vw;
+    left: 76vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/hund%20scene.svg);
+    z-index: 2;
+    transform: scale(1.4);
+    z-index: 4;
+
+
+}
+
+#mus {
+
+    position: absolute;
+    width: 6vw;
+    height: 9vw;
+
+    top: 43vw;
+    left: 60vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/mus%20scene.svg);
+    z-index: 5;
+    transform: scale(1.4);
+
+}
+
+#mus2 {
+
+    position: absolute;
+    width: 6vw;
+    height: 9vw;
+
+    top: 47vw;
+    left: 20vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/mus%20scene.svg);
+    z-index: 5;
+    transform: scale(1.4);
+
+
+}
+
+
+#timer {
+
+    position: absolute;
+    width: 5vw;
+    height: 6vw;
+
+    top: 8vw;
+    left: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/tid%20scene.svg);
+    z-index: 1;
+    transform: scale(1.4);
+
+
+}
+
+#liv {
+
+    position: absolute;
+    width: 5vw;
+    height: 6vw;
+
+    top: 18vw;
+    left: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/liv%20scene.svg);
+    z-index: 1;
+    transform: scale(1.4);
+
+
+}
+
+#liv2 {
+
+    position: absolute;
+    width: 5vw;
+    height: 6vw;
+
+    top: 28vw;
+    left: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/liv%20scene.svg);
+    z-index: 1;
+    transform: scale(1.4);
+
+
+}
+
+#liv3 {
+
+    position: absolute;
+    width: 5vw;
+    height: 6vw;
+
+    top: 38vw;
+    left: 2vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Produktion/liv%20scene.svg);
+    z-index: 1;
+    transform: scale(1.4);
+
+
+}
