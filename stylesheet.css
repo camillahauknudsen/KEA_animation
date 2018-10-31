@@ -11,6 +11,8 @@ body {
     height: 56.25vw;
     overflow: hidden;
 
+    margin: 0 auto;
+
 }
 
 #baggrund {
@@ -118,13 +120,48 @@ body {
     transform: scale(1.4)
 }
 
+.hund_opned {
+
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 45% 70%;
+    animation-direction: alternate;
+
+}
+
+@keyframes rotation {
+
+    0% {
+        transform: rotate(0deg) scale(0);
+        opacity: 1;
+
+    }
+
+    50% {
+
+        transform: rotate(0deg) scale(1);
+        opacity: 2;
+
+    }
+
+    100% {
+
+        transform: rotate(0deg) scale(2);
+        opacity: 1;
+
+    }
+
+}
+
 #hund2 {
 
     position: absolute;
     width: 6vw;
     height: 9vw;
 
-    top: 43vw;
+    top: 47vw;
     left: 76vw;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -133,8 +170,19 @@ body {
     transform: scale(1.4);
     z-index: 4;
 
-
 }
+
+.hund2_opned {
+
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 45% 70%;
+    animation-direction: alternate;
+}
+
+
 
 #mus {
 
@@ -142,13 +190,27 @@ body {
     width: 6vw;
     height: 9vw;
 
-    top: 43vw;
+    top: 48vw;
     left: 60vw;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(Produktion/mus%20scene.svg);
     z-index: 5;
     transform: scale(1.4);
+
+}
+
+
+.mus_opned {
+
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 45% 70%;
+    animation-direction: alternate;
+
+
 
 }
 
@@ -165,6 +227,19 @@ body {
     background-image: url(Produktion/mus%20scene.svg);
     z-index: 5;
     transform: scale(1.4);
+
+
+
+}
+
+.mus2_opned {
+
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 45% 70%;
+    animation-direction: alternate;
 
 
 }
