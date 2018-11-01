@@ -10,19 +10,43 @@ body {
     width: 100vw;
     height: 56.25vw;
     overflow: hidden;
-
-    margin: 0 auto;
-
-}
-
-#baggrund {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-image: url(Produktion/SVG/forstescene.svg);
     background-size: 100%;
 
+
 }
+
+
+#start {
+
+    position: absolute;
+    width: 100vw;
+    height: 56.35vw;
+    background-image: url(Produktion/titelsk%C3%A6rm.svg);
+    background-size: 100%;
+    background-color: rgb(240, 248, 255, 0.75);
+
+}
+
+
+#play {
+
+    position: absolute;
+    background-image: url(Produktion/play%20knap.svg);
+    background-size: 100%;
+    width: 30vw;
+    height: 60vw;
+    background-repeat: no-repeat;
+
+    left: 36vw;
+    top: 15vw;
+
+    cursor: pointer;
+
+}
+
+
+
 
 #skab {
 
@@ -117,43 +141,22 @@ body {
     background-size: 100%;
     background-image: url(Produktion/hund%20scene.svg);
     z-index: 5;
-    transform: scale(1.4)
+
 }
 
-.hund_opned {
+/* hundeeffekt
 
-    animation-name: rotation;
+    animation-name: pulse_kf;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: 45% 70%;
     animation-direction: alternate;
+transform: scale(1.4)
 
-}
+*/
 
-@keyframes rotation {
 
-    0% {
-        transform: rotate(0deg) scale(0);
-        opacity: 1;
-
-    }
-
-    50% {
-
-        transform: rotate(0deg) scale(1);
-        opacity: 2;
-
-    }
-
-    100% {
-
-        transform: rotate(0deg) scale(2);
-        opacity: 1;
-
-    }
-
-}
 
 #hund2 {
 
@@ -172,15 +175,17 @@ body {
 
 }
 
-.hund2_opned {
+/*hundeeffekt hund2_opned {
 
-    animation-name: rotation;
+    animation-name: pulse_kf;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: 45% 70%;
     animation-direction: alternate;
 }
+
+*/
 
 
 
@@ -196,21 +201,22 @@ body {
     background-size: 100%;
     background-image: url(Produktion/mus%20scene.svg);
     z-index: 5;
-    transform: scale(1.4);
+
 
 }
 
 
-.mus_opned {
+/*.musse effekt opned {
 
-    animation-name: rotation;
+    animation-name: pulse_kf;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: 45% 70%;
     animation-direction: alternate;
+transform: scale(1.4);
 
-
+*/
 
 }
 
@@ -220,27 +226,36 @@ body {
     width: 6vw;
     height: 9vw;
 
-    top: 47vw;
+    top: 48vw;
     left: 20vw;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(Produktion/mus%20scene.svg);
     z-index: 5;
-    transform: scale(1.4);
-
-
 
 }
 
-.mus2_opned {
 
-    animation-name: rotation;
+
+
+
+
+
+
+
+
+
+
+/*musseeffekt 2 {
+
+    animation-name: pulse_kf;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: 45% 70%;
     animation-direction: alternate;
-
+ transform: scale(1.4);
+*/
 
 }
 
@@ -310,5 +325,121 @@ body {
     z-index: 1;
     transform: scale(1.4);
 
+
+}
+
+/*effekter*/
+
+.pulsknap {
+
+    animation-name: pulseknap_kf;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    transform-origin: 45% 70%;
+
+
+}
+
+@keyframes pulseknap_kf {
+
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+
+        transform: scale(1.01)
+    }
+
+}
+
+.pulseanimal {
+
+    animation-name: pulse_kf;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transform-origin: 45% 70%;
+
+
+}
+
+@keyframes pulse_kf {
+
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+
+        transform: scale(2)
+    }
+
+}
+
+.hide {
+
+    visibility: hidden;
+
+}
+
+.show {
+
+    visibility: visible;
+
+
+}
+
+.blur {
+
+    filter: blur(5px) brightness(80%);
+
+
+}
+
+.fade_out {
+
+    animation-name: fadeout_kf;
+    animation-duration: 5;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeout_kf {
+
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+    }
+
+}
+
+.pause {
+
+    animation-duration: pause_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes pause_kf {
+
+    0% {}
+
+    100% {}
 
 }
